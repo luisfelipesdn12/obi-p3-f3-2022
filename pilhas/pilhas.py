@@ -19,9 +19,11 @@ mais_ocorr = sorted(
     reverse=True
 )[0:k]
 
+# print(f"mais_ocorr: {mais_ocorr}")
+
 for a in alturas:
     if a not in mais_ocorr:
-        for o in ocorrencias:
+        for o in sorted(mais_ocorr):
             if o > a:
                 moedas += o - a
                 break

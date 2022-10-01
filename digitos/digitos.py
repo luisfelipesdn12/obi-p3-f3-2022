@@ -21,7 +21,7 @@ while t <= n:
 
         # dígito obtido
         d = int("".join(digitos[p:p+t+ta]))
-        print(f"d: {d} (ta: {ta})")
+        # print(f"d: {d} (ta: {ta})")
 
         if da == None: pass
         elif da + 1 == d: pass
@@ -33,7 +33,7 @@ while t <= n:
         p += t + ta
         if str(d)[-1] == '9': ta += 1
 
-    print(f"wrong: {wrong}")
+    # print(f"wrong: {wrong}")
     
     if wrong == False: break
 

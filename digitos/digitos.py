@@ -14,21 +14,26 @@ while t <= n:
     # tamanho está errado
     wrong = False
 
+    # tamanho adicional (aumento de digitos)
+    ta = 0
+
     while p+t <= n:
+
         # dígito obtido
-        d = int("".join(digitos[p:p+t]))
-        # print(d)
+        d = int("".join(digitos[p:p+t+ta]))
+        print(f"d: {d} (ta: {ta})")
 
         if da == None: pass
         elif da + 1 == d: pass
         else:
             wrong = True
             break
-
+        
         da = d
-        p += t
+        p += t + ta
+        if str(d)[-1] == '9': ta += 1
 
-    # print(wrong)
+    print(f"wrong: {wrong}")
     
     if wrong == False: break
 

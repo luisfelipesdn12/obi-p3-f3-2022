@@ -28,10 +28,11 @@ while t <= n:
         else:
             wrong = True
             break
-        
+
         da = d
         p += t + ta
-        if str(d)[-1] == '9': ta += 1
+
+        if len(str(d + 1)) > len(str(d)): ta += 1
 
     # print(f"wrong: {wrong}")
     

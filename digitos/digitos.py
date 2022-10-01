@@ -17,7 +17,7 @@ while t <= n:
     while p+t <= n:
         # dígito obtido
         d = int("".join(digitos[p:p+t]))
-        print(d)
+        # print(d)
 
         if da == None: pass
         elif da + 1 == d: pass
@@ -28,7 +28,7 @@ while t <= n:
         da = d
         p += t
 
-    print(wrong)
+    # print(wrong)
     
     if wrong == False: break
 
